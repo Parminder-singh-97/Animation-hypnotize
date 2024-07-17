@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hipnotise | circles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        img {
+
+            animation: animate 1.9s infinite linear;
+            height: 400px;
+        }
+
+        .circle {
+            display: flex;
+            justify-content: center;
+
+            border: 3px solid black;
+            overflow: hidden;
+            display: flex;
+            width: 350px;
+            height: 400px;
+
+            background-color: rgba(255, 255, 255, 0.977);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        .pages {
+            width: 100%;
+            background-color: indianred;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pages div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+            height: 40px;
+            width: 40px;
+            border: 2px solid black;
+            background-color: yellowgreen;
+
+        }
+        a{
+            text-decoration: none;
+        }
+
+        @keyframes animate {
+            100% {
+                rotate: -360deg;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pages">
+        <a href="/index.html"><div class="p1">1</div></a>
+        <a href="/circle2.html"><div class="p1">2</div></a>
+        <a href="/circle3.html"><div class="p1">3</div></a>
+        <a href="/circle4.html"><div class="p1">4</div></a>
+        
+        
+    </div>
+
+
+    <div class="circle">
+        <img src="/circle3.jpg" alt="">
+    </div>
+
+</body>
+
+</html>
